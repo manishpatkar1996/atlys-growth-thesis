@@ -1,6 +1,12 @@
-# Atlys Growth Thesis
+# The Atlys Growth Note
 
-Interactive HTML presentation exploring how Atlys can grow through earlier-intent acquisition and existing-traveler growth loops.
+A responsive product-growth thesis exploring how Atlys can use its visa trust engine to reach travelers earlier, own travel feasibility, and turn every successful journey into the next one.
 
-Use the left and right arrow keys to navigate. Press `G` for the slide overview and `S` for sources.
+The note is designed as a continuous mobile-first reading experience and includes:
 
+- Atlys's earned product advantage
+- The complete traveler journey
+- The company growth model and focused growth mandate
+- Two compounding growth loops
+- Distribution architecture and illustrative product opportunities
+- Testable hypotheses and trust guardrails
