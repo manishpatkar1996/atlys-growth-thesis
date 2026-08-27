@@ -3,9 +3,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-  <meta name="theme-color" content="#000000">
-  <link rel="icon" href="assets/og-atlys-growth-note.png" type="image/png">
-  <meta name="description" content="A concise product note on how Atlys can create its next traveler.">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;750&display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/og-atlys-growth-note-v3.png" type="image/png">
+  <meta name="description" content="A concise product note on two paths to Atlys's next traveler.">
   <meta property="og:type" content="website">
   <meta property="og:title" content="The Atlys Growth Note">
   <meta property="og:description" content="Atlys has one traveler. What creates the next?">
@@ -18,76 +21,71 @@
   <title>The Atlys Growth Note</title>
   <style>
     :root{
-      --black:#000;
-      --ink:#1d1d1f;
-      --gray:#6e6e73;
-      --light:#f5f5f7;
-      --line:#d2d2d7;
+      --ink:#09090b;
+      --muted:#6e6e73;
+      --soft:#f5f5f7;
+      --line:#d9d9de;
       --white:#fff;
-      --green:#30d158;
-      --orange:#ff5a36;
-      --max:1040px;
-      --font:-apple-system,BlinkMacSystemFont,"SF Pro Display","SF Pro Text","Helvetica Neue",Arial,sans-serif;
+      --blue:#0071e3;
+      --blue2:#5b7cff;
+      --violet:#9b62ff;
+      --pale:#eaf4ff;
+      --dark:#0b0b0d;
+      --card:#171719;
+      --max:1080px;
+      --font:"Inter",-apple-system,BlinkMacSystemFont,"SF Pro Display","SF Pro Text","Helvetica Neue",Arial,sans-serif;
     }
     *{box-sizing:border-box;min-width:0}
-    html{scroll-behavior:smooth;scroll-padding-top:55px}
-    body{margin:0;background:var(--white);color:var(--ink);font-family:var(--font);font-size:17px;line-height:1.47;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+    html{scroll-behavior:smooth;scroll-padding-top:58px}
+    body{margin:0;background:var(--white);color:var(--ink);font-family:var(--font);font-size:17px;line-height:1.5;overflow-x:hidden;-webkit-font-smoothing:antialiased}
     a{color:inherit}
-    .progress{position:fixed;inset:0 0 auto;height:3px;z-index:100;background:transparent}.progress span{display:block;height:100%;width:0;background:var(--orange)}
-    .nav{position:sticky;top:0;z-index:90;background:rgba(255,255,255,.82);backdrop-filter:saturate(180%) blur(20px);border-bottom:1px solid rgba(0,0,0,.08)}
-    .nav-in{max-width:var(--max);height:54px;padding:0 20px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:14px}
-    .brand{font-size:11px;font-weight:700;text-decoration:none;letter-spacing:-.01em}.read{font-size:10px;color:var(--gray)}
-    .fold{min-height:calc(100svh - 54px);padding:70px 20px;display:grid;align-items:center;position:relative;overflow:hidden}
-    .wrap{width:100%;max-width:var(--max);margin:auto}.narrow{max-width:790px;margin:auto;text-align:center}
-    .dark{background:var(--black);color:var(--white)}.light{background:var(--light)}
-    .kicker{margin-bottom:18px;color:var(--orange);font-size:12px;font-weight:700}.dark .kicker{color:var(--green)}
-    h1,h2,h3,p{margin-top:0}
-    h1{font-size:clamp(55px,15vw,106px);line-height:.92;letter-spacing:-.065em;margin-bottom:30px}
-    h2{font-size:clamp(43px,11vw,78px);line-height:.98;letter-spacing:-.055em;margin-bottom:26px}
-    h3{font-size:21px;line-height:1.2;letter-spacing:-.025em;margin-bottom:8px}
-    .lead{max-width:760px;margin-left:auto;margin-right:auto;color:var(--gray);font-size:20px;line-height:1.45;letter-spacing:-.02em}.dark .lead{color:#a1a1a6}
-    .accent{color:var(--orange)}.dark .accent{color:var(--green)}
-    .reveal{opacity:0;transform:translateY(18px);transition:opacity .72s ease,transform .72s ease}.reveal.on{opacity:1;transform:none}
+    .progress{position:fixed;inset:0 0 auto;height:3px;z-index:100;background:transparent}.progress span{display:block;width:0;height:100%;background:linear-gradient(90deg,var(--blue),var(--violet))}
+    .nav{position:sticky;top:0;z-index:90;background:rgba(255,255,255,.86);backdrop-filter:saturate(180%) blur(22px);border-bottom:1px solid rgba(0,0,0,.08)}
+    .nav-in{max-width:var(--max);height:56px;padding:0 20px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:16px}.brand{font-size:12px;font-weight:700;text-decoration:none}.read{font-size:11px;color:var(--muted)}
+    .fold{min-height:calc(100svh - 56px);padding:76px 20px;display:grid;align-items:center;position:relative;overflow:hidden}.wrap{width:100%;max-width:var(--max);margin:auto}.narrow{max-width:840px;margin:auto;text-align:center}
+    .light{background:var(--soft)}.dark{background:var(--dark);color:var(--white)}.pale{background:linear-gradient(145deg,#f7fbff 0%,var(--pale) 52%,#f3efff 100%)}
+    .kicker{margin-bottom:18px;color:var(--blue);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase}.dark .kicker{color:#82aaff}
+    h1,h2,h3,p{margin-top:0}h1{font-size:clamp(53px,15vw,108px);line-height:.93;letter-spacing:-.067em;margin-bottom:28px}h2{font-size:clamp(42px,11vw,78px);line-height:.98;letter-spacing:-.055em;margin-bottom:25px}h3{font-size:22px;line-height:1.15;letter-spacing:-.035em;margin-bottom:8px}
+    .lead{max-width:760px;margin-left:auto;margin-right:auto;color:var(--muted);font-size:20px;line-height:1.45;letter-spacing:-.025em}.dark .lead{color:#a1a1a6}
+    .gradient{background:linear-gradient(100deg,var(--blue) 4%,var(--blue2) 48%,var(--violet) 94%);-webkit-background-clip:text;background-clip:text;color:transparent}
+    .reveal{opacity:0;transform:translateY(20px);transition:opacity .68s ease,transform .68s ease}.reveal.on{opacity:1;transform:none}
 
-    /* Fold 1 */
-    .hero{background:#000;color:#fff;text-align:center}.hero h1 span{display:block;color:var(--green)}
-    .hero .lead{font-size:21px}.hero-note{margin:34px auto 0;max-width:700px;padding-top:25px;border-top:1px solid #333;color:#f5f5f7;font-size:16px;font-weight:600}
-    .proof{margin:42px auto 0;max-width:720px;display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:#2b2b2d;border:1px solid #2b2b2d;border-radius:20px;overflow:hidden;text-align:left}.proof div{padding:18px 14px;background:#101010}.proof b{display:block;font-size:24px;letter-spacing:-.04em}.proof span{display:block;margin-top:5px;color:#86868b;font-size:9px;line-height:1.3}
+    /* 00 — premise */
+    .hero{text-align:center;background:#fff}.hero .lead{font-size:21px}.hero-note{max-width:690px;margin:34px auto 0;padding-top:24px;border-top:1px solid var(--line);font-size:16px;font-weight:600}.hero-note span{color:var(--blue)}
+    .proof{max-width:740px;margin:42px auto 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);display:grid;text-align:left}.proof div{padding:19px 2px}.proof div+div{border-top:1px solid var(--line)}.proof b{display:block;font-size:29px;line-height:1;letter-spacing:-.055em}.proof small{display:block;margin-top:8px;color:var(--muted);font-size:10px}
 
-    /* Fold 2 */
-    .equation{max-width:880px;margin:44px auto 0;display:grid;gap:10px}.eq{position:relative;padding:17px 19px;border-radius:17px;background:#fff;box-shadow:0 7px 26px rgba(0,0,0,.06);display:grid;grid-template-columns:28px 1fr;gap:12px;align-items:center;text-align:left}.eq .num{width:26px;height:26px;border-radius:50%;display:grid;place-items:center;background:#e8e8ed;color:var(--gray);font-size:10px;font-weight:700}.eq small{display:block;color:var(--gray);font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.07em}.eq b{display:block;margin-top:2px;font-size:14px}.eq.focus{background:var(--ink);color:#fff}.eq.focus .num{background:var(--green);color:#000}.eq.focus small{color:#a1a1a6}
-    .revenue{max-width:880px;margin:15px auto 0;padding:19px;border-radius:17px;background:#fff;text-align:center;font-size:14px;font-weight:650}.scope{max-width:760px;margin:22px auto 0;color:var(--gray);font-size:13px}.scope b{color:var(--ink)}
+    /* 01 — mandate */
+    .mandate{max-width:900px;margin:42px auto 0;display:grid;gap:12px}.path-card{padding:25px;border-radius:28px;background:#fff;text-align:left;box-shadow:0 18px 55px rgba(20,35,70,.08)}.path-card .tag{display:inline-flex;align-items:center;gap:8px;color:var(--blue);font-size:10px;font-weight:700;letter-spacing:.05em;text-transform:uppercase}.path-card .tag i{width:24px;height:24px;border-radius:50%;display:grid;place-items:center;background:var(--blue);color:#fff;font-style:normal}.path-card h3{margin:18px 0 8px;font-size:27px}.path-card p{margin:0;color:var(--muted);font-size:13px}.scope{max-width:820px;margin:18px auto 0;color:var(--muted);font-size:12px}.scope b{color:var(--ink)}
+    .equation-mini{max-width:820px;margin:32px auto 0;display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:7px;color:var(--muted);font-size:10px}.equation-mini b{color:var(--ink)}.equation-mini .focus-pill{padding:7px 10px;border-radius:999px;background:var(--ink);color:#fff}
 
-    /* Fold 3 */
-    .journey{max-width:920px;margin:48px auto 0;display:grid;grid-template-columns:repeat(7,1fr);gap:7px}.stage{min-height:117px;padding:17px 12px;border-radius:20px;background:#1c1c1e;text-align:left}.stage small{display:block;color:#636366;font-size:9px;font-weight:700}.stage b{display:block;margin-top:20px;font-size:13px}.stage span{display:block;margin-top:4px;color:#7c7c80;font-size:10px}.stage.early{background:#141d15}.stage.early small,.stage.early b{color:var(--green)}.stage.atlys{background:#fff;color:#000}.stage.atlys small{color:var(--orange)}.stage.atlys span{color:#6e6e73}
-    .journey-line{max-width:840px;margin:30px auto 0;color:#a1a1a6;font-size:14px}.journey-line b{color:#fff}
+    /* 02 — journey */
+    .journey{max-width:950px;margin:46px auto 0;display:grid;grid-template-columns:repeat(7,1fr);gap:7px}.stage{min-height:116px;padding:16px 11px;border-radius:20px;background:#1b1b1e;text-align:left}.stage small{display:block;color:#66666b;font-size:9px;font-weight:700}.stage b{display:block;margin-top:19px;font-size:13px}.stage span{display:block;margin-top:4px;color:#7e7e84;font-size:9px}.stage.pre{background:#122238}.stage.pre small,.stage.pre b{color:#8dbaff}.stage.atlys{background:#fff;color:#000}.stage.atlys small{color:var(--blue)}.stage.atlys span{color:var(--muted)}
+    .split{max-width:900px;margin:24px auto 0;display:grid;gap:9px}.split-card{padding:18px 20px;border:1px solid #303036;border-radius:20px;text-align:left}.split-card small{color:#82aaff;font-size:9px;font-weight:700}.split-card b{display:block;margin-top:6px;font-size:14px}.split-card span{display:block;margin-top:4px;color:#8e8e93;font-size:10px}
 
-    /* Fold 4 */
-    .questions{max-width:940px;margin:46px auto 0;display:grid;gap:12px}.question{padding:25px;border-radius:24px;background:#fff;box-shadow:0 10px 35px rgba(0,0,0,.06);text-align:left}.question span{display:block;color:var(--orange);font-size:11px;font-weight:700}.question b{display:block;margin-top:8px;font-size:24px;letter-spacing:-.035em}.question p{margin:8px 0 0;color:var(--gray);font-size:12px}.loop-line{max-width:940px;margin:13px auto 0;padding:20px;border-radius:22px;background:var(--ink);color:#fff;font-size:13px;text-align:center}.loop-line em{color:var(--green);font-style:normal;font-weight:700}
+    /* 03 — path A */
+    .question-stack{max-width:900px;margin:42px auto 0;display:grid;gap:11px}.question{padding:25px;border-radius:26px;background:rgba(255,255,255,.92);box-shadow:0 16px 46px rgba(0,75,170,.08);text-align:left}.question span{color:var(--blue);font-size:10px;font-weight:700}.question b{display:block;margin-top:8px;font-size:23px;letter-spacing:-.035em}.question p{margin:7px 0 0;color:var(--muted);font-size:12px}.not-products{max-width:850px;margin:18px auto 0;color:var(--muted);font-size:11px}.loop-line{max-width:900px;margin:22px auto 0;padding:20px;border-radius:23px;background:var(--ink);color:#fff;font-size:12px;text-align:center}.loop-line b{color:#8dbaff}
 
-    /* Fold 5 */
-    .distribution{max-width:900px;margin:45px auto 0}.channel-row{display:flex;justify-content:center;flex-wrap:wrap;gap:8px}.channel{padding:10px 13px;border-radius:999px;background:#f2f2f4;font-size:11px;font-weight:650}.distribution-flow{margin-top:28px;display:grid;gap:8px}.dist-step{padding:18px;border-radius:18px;background:#f5f5f7;text-align:left}.dist-step small{color:var(--orange);font-size:9px;font-weight:700}.dist-step b{display:block;margin-top:5px;font-size:15px}.dist-step:last-child{background:var(--green)}.dist-step:last-child small{color:#124d22}
+    /* 04 — distribution */
+    .distribution{max-width:920px;margin:43px auto 0}.channels{display:flex;justify-content:center;flex-wrap:wrap;gap:8px}.channel{padding:10px 13px;border:1px solid var(--line);border-radius:999px;background:#fff;font-size:10px;font-weight:600}.dist-flow{margin-top:28px;display:grid;gap:10px}.dist-step{padding:21px;border-radius:24px;background:var(--soft);text-align:left}.dist-step small{color:var(--blue);font-size:9px;font-weight:700}.dist-step b{display:block;margin-top:5px;font-size:16px}.dist-step p{margin:5px 0 0;color:var(--muted);font-size:10px}.dist-step.final{background:linear-gradient(135deg,var(--blue),#735cff);color:#fff}.dist-step.final small,.dist-step.final p{color:#dfeaff}
 
-    /* Fold 6 */
-    .distinction{max-width:800px;margin:36px auto 0;padding:22px 0;border-top:1px solid #333;border-bottom:1px solid #333;color:#a1a1a6;font-size:14px}.distinction b{display:block;margin-bottom:7px;color:#fff;font-size:16px}
-    .outcomes{max-width:900px;margin:30px auto 0;display:grid;gap:10px}.outcome{padding:21px;border-radius:22px;background:#1c1c1e;text-align:left}.outcome small{color:var(--green);font-size:9px;font-weight:700;text-transform:uppercase}.outcome b{display:block;margin-top:7px;font-size:17px}.outcome p{margin:6px 0 0;color:#8e8e93;font-size:11px}.territory-note{max-width:840px;margin:19px auto 0;color:#7c7c80;font-size:11px}.territory-note b{color:#fff}
+    /* 05 — path B */
+    .three-ways{max-width:900px;margin:38px auto 0;display:grid;gap:10px}.way{padding:23px;border-radius:24px;background:var(--card);text-align:left}.way span{display:inline-grid;width:29px;height:29px;place-items:center;border-radius:50%;background:#fff;color:#000;font-size:10px;font-weight:700}.way b{display:block;margin-top:18px;font-size:19px}.way p{margin:6px 0 0;color:#8e8e93;font-size:11px}.existing-note{max-width:840px;margin:21px auto 0;padding-top:19px;border-top:1px solid #303036;color:#8e8e93;font-size:11px}.existing-note b{color:#fff}
 
-    /* Fold 7 */
-    .lenses{max-width:930px;margin:43px auto 0;display:grid;grid-template-columns:1fr 1fr;gap:10px}.lens{padding:20px;border-radius:22px;background:#fff;text-align:left}.lens span{color:var(--orange);font-size:10px;font-weight:700}.lens b{display:block;margin-top:13px;font-size:15px}.lens p{margin:5px 0 0;color:var(--gray);font-size:10px}.metric{max-width:930px;margin:12px auto 0;padding:23px;border-radius:22px;background:var(--ink);color:#fff;text-align:left}.metric small{color:var(--green);font-size:9px;font-weight:700}.metric strong{display:block;margin-top:8px;font-size:21px;line-height:1.2;letter-spacing:-.03em}.metric p{margin:7px 0 0;color:#8e8e93;font-size:10px}
+    /* 06 — research */
+    .research-grid{max-width:930px;margin:40px auto 0;display:grid;grid-template-columns:1fr 1fr;gap:10px}.lens{padding:20px;border-radius:23px;background:#fff;text-align:left}.lens span{color:var(--blue);font-size:9px;font-weight:700}.lens b{display:block;margin-top:11px;font-size:15px}.lens p{margin:5px 0 0;color:var(--muted);font-size:10px}.metric{max-width:930px;margin:12px auto 0;padding:24px;border-radius:24px;background:var(--ink);color:#fff;text-align:left}.metric small{color:#8dbaff;font-size:9px;font-weight:700}.metric strong{display:block;margin-top:8px;font-size:21px;line-height:1.2;letter-spacing:-.03em}.metric p{margin:7px 0 0;color:#8e8e93;font-size:10px}
 
-    /* Fold 8 */
-    .bets{max-width:880px;margin:40px auto 0;display:grid;gap:10px}.bet{display:grid;grid-template-columns:38px 1fr;gap:13px;align-items:start;padding:19px;border-radius:20px;background:#1c1c1e;text-align:left}.bet span{width:34px;height:34px;border-radius:50%;display:grid;place-items:center;background:var(--green);color:#000;font-size:11px;font-weight:750}.bet b{display:block;font-size:15px}.bet small{display:block;margin-top:4px;color:#8e8e93;font-size:10px;line-height:1.4}
+    /* 07 — focus */
+    .bets{max-width:900px;margin:40px auto 0;display:grid;gap:10px}.bet{display:grid;grid-template-columns:38px 1fr;gap:14px;align-items:start;padding:21px;border-radius:23px;background:#fff;text-align:left;box-shadow:0 14px 40px rgba(42,62,110,.07)}.bet span{width:36px;height:36px;border-radius:50%;display:grid;place-items:center;background:var(--ink);color:#fff;font-size:11px;font-weight:700}.bet b{display:block;font-size:16px}.bet small{display:block;margin-top:5px;color:var(--muted);font-size:10px;line-height:1.45}.research-note{margin-top:18px;color:var(--muted);font-size:11px;font-weight:600}
 
-    /* Fold 9 */
-    .soul{background:#fff;text-align:center}.soul-copy{max-width:840px;margin:auto}.soul-copy p{max-width:680px;margin-left:auto;margin-right:auto;color:var(--gray);font-size:18px}.soul h2{margin-top:34px;font-size:clamp(48px,13vw,92px)}.soul h2 span{display:block;color:var(--orange)}.last{margin-top:34px;color:#86868b;font-size:10px;font-weight:650;letter-spacing:.08em;text-transform:uppercase}
-    footer{padding:34px 20px;background:#f5f5f7;color:#86868b}.footer-in{max-width:var(--max);margin:auto;display:grid;gap:10px}footer p{margin:0;font-size:10px}footer b{color:var(--ink)}
+    /* 08 — close */
+    .soul{text-align:center;background:#fff}.soul-copy{max-width:880px;margin:auto}.soul-copy .setup{max-width:700px;margin:0 auto 15px;color:var(--muted);font-size:18px}.soul-copy .questions-close{max-width:760px;margin:28px auto;padding:25px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);display:grid;gap:17px;text-align:left}.questions-close b{display:block;font-size:17px}.questions-close span{color:var(--blue)}.soul h2{margin:38px auto 0;font-size:clamp(48px,13vw,94px)}.soul h2 span{display:block}.last{margin-top:34px;color:#86868b;font-size:9px;font-weight:700;letter-spacing:.1em;text-transform:uppercase}
+    footer{padding:36px 20px;background:var(--soft);color:#86868b}.footer-in{max-width:var(--max);margin:auto;display:grid;gap:12px}footer p{margin:0;font-size:10px}footer b{color:var(--ink)}
 
     @media(max-width:719px){
-      .proof{grid-template-columns:1fr}.proof div{padding:14px 16px}.proof b{font-size:21px}.proof span{font-size:9px}.journey{grid-template-columns:1fr 1fr}.stage{min-height:102px}.stage:last-child{grid-column:1/-1}.stage b{margin-top:14px}.questions{gap:9px}.question{padding:21px}.question b{font-size:21px}
+      .fold{padding-top:68px;padding-bottom:68px}.hero{min-height:auto;padding-top:84px;padding-bottom:84px}.hero .lead{font-size:19px}.proof{grid-template-columns:1fr}.journey{grid-template-columns:1fr 1fr}.stage{min-height:100px}.stage:last-child{grid-column:1/-1}.stage b{margin-top:13px}.question{padding:22px}.question b{font-size:21px}.equation-mini{line-height:1.9}.soul-copy .setup{font-size:17px}
     }
     @media(min-width:720px){
-      .nav-in{height:58px;padding:0 28px}.brand{font-size:12px}.fold{min-height:calc(100svh - 58px);padding:90px 28px}.hero .lead{font-size:25px}.hero-note{font-size:18px}.proof div{padding:20px}.proof b{font-size:30px}.proof span{font-size:10px}
-      .equation{grid-template-columns:repeat(6,1fr)}.eq{display:block;min-height:135px;padding:20px 15px}.eq b{margin-top:18px}.revenue{display:flex;justify-content:space-between}.questions{grid-template-columns:repeat(2,1fr)}.question{padding:30px}.question b{font-size:28px}.question:nth-child(3){grid-column:1/-1}.distribution-flow{grid-template-columns:repeat(3,1fr)}.dist-step{padding:22px}.outcomes{grid-template-columns:repeat(3,1fr)}.outcome{padding:24px}.lenses{grid-template-columns:repeat(5,1fr)}.lens{padding:23px 17px}.bets{grid-template-columns:repeat(3,1fr)}.bet{display:block;padding:24px}.bet b{margin-top:24px}.footer-in{grid-template-columns:1fr 1fr;gap:50px}
+      .nav-in{height:60px;padding:0 30px}.fold{min-height:calc(100svh - 60px);padding:96px 30px}.hero .lead{font-size:25px}.hero-note{font-size:18px}.proof{grid-template-columns:repeat(3,1fr)}.proof div{padding:22px 20px}.proof div+div{border-top:0;border-left:1px solid var(--line)}.proof b{font-size:34px}.mandate{grid-template-columns:1fr 1fr}.path-card{padding:32px}.path-card h3{font-size:31px}.split{grid-template-columns:1fr 1fr}.question-stack{grid-template-columns:repeat(2,1fr)}.question{padding:30px}.question:nth-child(3){grid-column:1/-1}.dist-flow{grid-template-columns:repeat(3,1fr)}.dist-step{padding:25px}.three-ways{grid-template-columns:repeat(3,1fr)}.way{padding:27px}.research-grid{grid-template-columns:repeat(5,1fr)}.lens{padding:22px 16px}.bets{grid-template-columns:repeat(3,1fr)}.bet{display:block;padding:25px}.bet b{margin-top:22px}.footer-in{grid-template-columns:1fr 1fr;gap:55px}
     }
     @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{opacity:1;transform:none;transition:none}}
   </style>
@@ -100,134 +98,137 @@
     <section class="fold hero" id="top">
       <div class="wrap narrow reveal">
         <div class="kicker">A product growth exploration</div>
-        <h1>Atlys has one traveler. <span>What creates the next?</span></h1>
-        <p class="lead">Atlys has built a seven-star visa experience. This note asks how that experience can bring substantially more travelers into Atlys.</p>
-        <div class="hero-note">Look in two places: before someone needs a visa, and after someone experiences Atlys.</div>
-        <div class="proof"><div><b>1M+</b><span>applications processed annually</span></div><div><b>45 sec</b><span>active input for eligible applications</span></div><div><b>99.2%</b><span>on or before promised date</span></div></div>
+        <h1>Atlys has one traveler. <span class="gradient">What creates the next?</span></h1>
+        <p class="lead">Atlys has built a seven-star visa experience. This note explores how that trusted experience can bring substantially more travelers into Atlys.</p>
+        <div class="hero-note">Look in two places: <span>before visa intent</span> and <span>after value is delivered.</span></div>
+        <div class="proof"><div><b>1M+</b><small>processed annually</small></div><div><b>45 sec</b><small>active input for an eligible application</small></div><div><b>99.2%</b><small>on or before the promised date</small></div></div>
       </div>
     </section>
 
-    <section class="fold light" id="focus">
+    <section class="fold light" id="mandate">
       <div class="wrap narrow reveal">
-        <div class="kicker">01 · Locate the problem</div>
-        <h2>Growth has six levers. This note focuses on one.</h2>
-        <p class="lead">Bring more qualified people into Atlys—and learn how each successful traveler can create new or repeat demand.</p>
-        <div class="equation" aria-label="Atlys growth funnel">
-          <div class="eq"><span class="num">1</span><div><small>Demand</small><b>Need a visa</b></div></div>
-          <div class="eq"><span class="num">2</span><div><small>Coverage</small><b>Can use Atlys</b></div></div>
-          <div class="eq focus"><span class="num">3</span><div><small>Acquisition</small><b>Consider Atlys</b></div></div>
-          <div class="eq"><span class="num">4</span><div><small>Conversion</small><b>Start and pay</b></div></div>
-          <div class="eq"><span class="num">5</span><div><small>Delivery</small><b>Visa processed</b></div></div>
-          <div class="eq"><span class="num">6</span><div><small>Value</small><b>Revenue per visa</b></div></div>
+        <div class="kicker">01 · The growth mandate</div>
+        <h2>Acquire the next traveler through two paths.</h2>
+        <p class="lead">One path starts before a person searches for a visa. The other begins after Atlys has delivered a great experience.</p>
+        <div class="mandate">
+          <article class="path-card"><span class="tag"><i>A</i> Net-new users</span><h3>Enter the journey earlier.</h3><p>Help with a consequential travel decision, then convert qualified intent into Atlys usage.</p></article>
+          <article class="path-card"><span class="tag"><i>B</i> Existing travelers</span><h3>Let trust create demand.</h3><p>Find the natural behaviors that lead to another user, a recommendation or a repeat trip.</p></article>
         </div>
-        <div class="revenue"><b>Completed paid visas × net revenue per visa</b></div>
-        <div class="scope"><b>Scope:</b> qualified acquisition, user-to-user growth and repeat usage—not a redesign of the core visa engine.</div>
+        <div class="equation-mini" aria-label="Company growth equation"><b>Demand</b><span>×</span><b>Coverage</b><span>×</span><span class="focus-pill">Acquisition</span><span>×</span><b>Conversion</b><span>×</span><b>Delivery</b><span>×</span><b>Value</b></div>
+        <div class="scope"><b>The full company equation has six levers.</b> This note deliberately isolates how product-led acquisition, referral and repeat usage can expand completed paid visas.</div>
       </div>
     </section>
 
     <section class="fold dark" id="journey">
       <div class="wrap narrow reveal">
-        <div class="kicker">02 · The journey</div>
-        <h2>Visa intent arrives late.</h2>
-        <p class="lead">The travel decision begins much earlier—and continues long after delivery.</p>
+        <div class="kicker">02 · Where the paths begin</div>
+        <h2>Visa intent is only one moment in a much longer journey.</h2>
         <div class="journey">
-          <div class="stage early"><small>01</small><b>Trigger</b><span>Why travel?</span></div>
-          <div class="stage early"><small>02</small><b>Explore</b><span>Where?</span></div>
-          <div class="stage early"><small>03</small><b>Compare</b><span>Can I afford it?</span></div>
-          <div class="stage early"><small>04</small><b>Coordinate</b><span>Can we all go?</span></div>
+          <div class="stage pre"><small>01</small><b>Trigger</b><span>Why travel?</span></div>
+          <div class="stage pre"><small>02</small><b>Explore</b><span>Where?</span></div>
+          <div class="stage pre"><small>03</small><b>Compare</b><span>Can I afford it?</span></div>
+          <div class="stage pre"><small>04</small><b>Coordinate</b><span>Can we go?</span></div>
           <div class="stage"><small>05</small><b>Commit</b><span>Book the trip</span></div>
           <div class="stage atlys"><small>06</small><b>Visa</b><span>Atlys today</span></div>
-          <div class="stage"><small>07</small><b>Return</b><span>Where next?</span></div>
+          <div class="stage"><small>07</small><b>Experience</b><span>Travel & return</span></div>
         </div>
-        <div class="journey-line"><b>The opportunity:</b> enter earlier, then let delivered trust create what comes next.</div>
+        <div class="split">
+          <div class="split-card"><small>PATH A · BEFORE ATLYS</small><b>Capture qualified intent earlier</b><span>Bring a net-new traveler into Atlys before the visa search.</span></div>
+          <div class="split-card"><small>PATH B · AFTER VALUE</small><b>Create new or repeat demand</b><span>Let a successful journey lead to another user, recommendation or trip.</span></div>
+        </div>
       </div>
     </section>
 
-    <section class="fold light" id="earlier">
+    <section class="fold pale" id="path-a">
       <div class="wrap narrow reveal">
-        <div class="kicker">03 · Opportunity A</div>
+        <div class="kicker">03 · Path A · Net-new users</div>
         <h2>Become useful before the visa search.</h2>
-        <p class="lead">The bet is not “build a trip planner.” It is to find an earlier travel question that Atlys can answer uniquely—and that leads naturally to a real trip.</p>
-        <div class="questions">
-          <article class="question"><span>DECIDE</span><b>Where can we realistically go?</b><p>Passport, residence, timing and group constraints.</p></article>
+        <p class="lead">Today, most travelers reach Atlys after deciding they need a visa. The opportunity is to help while they are still deciding where, when or whether they can travel.</p>
+        <div class="question-stack">
+          <article class="question"><span>DECIDE</span><b>Where can we realistically go?</b><p>Passport, residence, budget and group constraints.</p></article>
           <article class="question"><span>TIME</span><b>Can we make this trip happen?</b><p>Leave, events, seasonality and visa timelines.</p></article>
           <article class="question"><span>CONFIDENCE</span><b>What could prevent us from going?</b><p>Access, documentation and readiness before money is committed.</p></article>
         </div>
-        <div class="loop-line">Earlier question → useful Atlys answer → qualified trip intent → paid visa → <em>better next answer</em></div>
+        <div class="not-products">These are examples of earlier questions, not a proposed product roadmap.</div>
+        <div class="loop-line"><b>Earlier travel question</b> → useful Atlys experience → qualified user enters Atlys → visa application</div>
       </div>
     </section>
 
     <section class="fold" id="distribution">
       <div class="wrap narrow reveal">
-        <div class="kicker">04 · Distribution</div>
-        <h2>A useful tool does not distribute itself.</h2>
-        <p class="lead">Each earlier-intent experience needs a place where its question already exists—and a credible path back to Atlys.</p>
+        <div class="kicker">04 · Distribution is part of Path A</div>
+        <h2>A useful experience only grows if travelers find it.</h2>
+        <p class="lead">The product and its distribution must be designed together, around places where the earlier question already exists.</p>
         <div class="distribution">
-          <div class="channel-row"><span class="channel">Search</span><span class="channel">Creators</span><span class="channel">Events</span><span class="channel">Partners</span><span class="channel">WhatsApp</span><span class="channel">Atlys CRM</span></div>
-          <div class="distribution-flow">
-            <div class="dist-step"><small>MEET</small><b>Find the traveler in context</b></div>
-            <div class="dist-step"><small>HELP</small><b>Resolve a consequential question</b></div>
-            <div class="dist-step"><small>COMPOUND</small><b>Create the next qualified traveler</b></div>
+          <div class="channels"><span class="channel">Search</span><span class="channel">Travel creators</span><span class="channel">Events</span><span class="channel">Partners</span><span class="channel">WhatsApp sharing</span><span class="channel">Atlys CRM</span></div>
+          <div class="dist-flow">
+            <div class="dist-step"><small>01 · FIND</small><b>Meet the traveler in context.</b><p>Distribute around the question, not around a generic travel tool.</p></div>
+            <div class="dist-step"><small>02 · HELP</small><b>Resolve something consequential.</b><p>Earn enough trust for the traveler to continue with Atlys.</p></div>
+            <div class="dist-step final"><small>03 · CONVERT</small><b>Create qualified Atlys usage.</b><p>The output is a real user with a plausible trip, not empty engagement.</p></div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="fold dark" id="existing">
+    <section class="fold dark" id="path-b">
       <div class="wrap narrow reveal">
-        <div class="kicker">05 · Opportunity B</div>
-        <h2>Let delivered value create new demand.</h2>
-        <p class="lead">Atlys already lets a user manage applications and documents for other travelers. The question is not how to add a traveler. It is how trust creates a new activated user, a recommendation or a future trip.</p>
-        <div class="distinction"><b>Do not manufacture sharing.</b>Find the natural action that follows relief, confidence, anticipation or pride.</div>
-        <div class="outcomes">
-          <article class="outcome"><small>COORDINATE</small><b>Activate companions</b><p>Possible territory: group planning, private invitations or shared readiness.</p></article>
-          <article class="outcome"><small>HELP</small><b>Earn recommendations</b><p>Possible territory: contextual referrals and verified travel knowledge.</p></article>
-          <article class="outcome"><small>RETURN</small><b>Make the next trip easier</b><p>Possible territory: reusable context, reminders and next-trip discovery.</p></article>
+        <div class="kicker">05 · Path B · Existing travelers</div>
+        <h2>Let a successful journey create what comes next.</h2>
+        <p class="lead">After Atlys delivers value, growth can happen in three ways: the traveler brings someone else, recommends Atlys when it matters, or returns for a future trip.</p>
+        <div class="three-ways">
+          <article class="way"><span>1</span><b>Bring another traveler</b><p>Research territory: coordination, private invitations or shared trip readiness.</p></article>
+          <article class="way"><span>2</span><b>Recommend Atlys</b><p>Research territory: contextual word of mouth, referral or useful travel knowledge.</p></article>
+          <article class="way"><span>3</span><b>Return for another trip</b><p>Research territory: reusable context, relevant triggers and next-trip discovery.</p></article>
         </div>
-        <div class="territory-note"><b>These are research territories, not feature commitments.</b> The winning mechanism must be discovered.</div>
+        <div class="existing-note"><b>Atlys already supports managing multiple travelers.</b> The research question is not how to add one. It is which natural post-experience behavior creates incremental users or trips.</div>
       </div>
     </section>
 
     <section class="fold light" id="research">
       <div class="wrap narrow reveal">
         <div class="kicker">06 · Earn the roadmap</div>
-        <h2>Direction is strategy. The feature is research.</h2>
-        <p class="lead">Start with traveler behavior, validate demand cheaply, and scale only when one use reliably creates another paid traveler.</p>
-        <div class="lenses">
+        <h2>We know where to investigate. We do not know the winning product yet.</h2>
+        <p class="lead">Start with traveler behavior. Validate demand cheaply. Build only when a mechanism shows credible, incremental growth.</p>
+        <div class="research-grid">
           <article class="lens"><span>01</span><b>Problem strength</b><p>Will this change behavior?</p></article>
-          <article class="lens"><span>02</span><b>Atlys advantage</b><p>Can Atlys solve it better?</p></article>
+          <article class="lens"><span>02</span><b>Atlys advantage</b><p>Can Atlys solve it uniquely?</p></article>
           <article class="lens"><span>03</span><b>Distribution</b><p>How will people find it?</p></article>
-          <article class="lens"><span>04</span><b>Conversion proximity</b><p>Does it signal a real trip?</p></article>
-          <article class="lens"><span>05</span><b>Compounding output</b><p>Does each use improve the next?</p></article>
+          <article class="lens"><span>04</span><b>Intent quality</b><p>Does it signal a real trip?</p></article>
+          <article class="lens"><span>05</span><b>Incrementality</b><p>Did it create new demand?</p></article>
         </div>
-        <div class="metric"><small>PRACTICAL NORTH STAR</small><strong>Incremental paid visas from organic, referred and repeat demand.</strong><p>Guardrails: acquisition cost, conversion, reliable delivery, service margin and traveler trust.</p></div>
+        <div class="metric"><small>PRACTICAL NORTH STAR</small><strong>Incremental completed paid visas from organic, referred and repeat demand.</strong><p>Guardrails: acquisition cost, conversion, reliable delivery, service margin and traveler trust.</p></div>
       </div>
     </section>
 
-    <section class="fold dark" id="bets">
+    <section class="fold pale" id="focus">
       <div class="wrap narrow reveal">
-        <div class="kicker">07 · My three research bets</div>
-        <h2>Clear direction. Open answers.</h2>
+        <div class="kicker">07 · Where I would focus</div>
+        <h2>Three research bets. Not three feature commitments.</h2>
         <div class="bets">
           <article class="bet"><span>1</span><div><b>Find the earlier-intent wedge</b><small>Discover the pre-visa decision where Atlys can create qualified demand.</small></div></article>
-          <article class="bet"><span>2</span><div><b>Find the strongest user-to-user loop</b><small>Learn which natural action creates another activated traveler.</small></div></article>
-          <article class="bet"><span>3</span><div><b>Make returning to Atlys obvious</b><small>Use trusted context to reduce the friction of every future trip.</small></div></article>
+          <article class="bet"><span>2</span><div><b>Find the strongest post-experience loop</b><small>Learn which natural behavior creates another user, recommendation or trip.</small></div></article>
+          <article class="bet"><span>3</span><div><b>Make returning meaningfully easier</b><small>Use trusted context to reduce friction when the traveler is ready again.</small></div></article>
         </div>
+        <div class="research-note">The exact solutions should emerge from research and experiments, not from this note.</div>
       </div>
     </section>
 
     <section class="fold soul" id="pitch">
       <div class="soul-copy reveal">
         <div class="kicker">My pitch</div>
-        <p>I do not know yet whether the winning answer is planning, coordination, distribution—or something travelers reveal only after we study them.</p>
-        <p>What I do know is where I would look, what I would measure and how I would turn uncertainty into a focused growth roadmap.</p>
-        <h2>Atlys has earned trust at the hardest moment. <span>I would love to help turn that trust into growth.</span></h2>
-        <div class="last">Not by guessing the feature. By finding the loop.</div>
+        <p class="setup">If I joined Atlys, I would spend my time answering two questions:</p>
+        <div class="questions-close">
+          <b><span>01</span> What could make Atlys useful before visa intent?</b>
+          <b><span>02</span> Which behaviors after a great Atlys experience create the next user or trip?</b>
+        </div>
+        <p class="setup">I do not know the winning features yet. I would research the moments, test the smallest credible interventions, and follow the evidence until one path becomes repeatable.</p>
+        <h2>Atlys has earned trust at the hardest moment. <span class="gradient">I would love to help make that trust travel further.</span></h2>
+        <div class="last">Clear opportunity spaces. Evidence-led product bets.</div>
       </div>
     </section>
   </main>
 
-  <footer><div class="footer-in"><p><b>About</b><br>An independent product-growth exploration prepared for discussion. Opportunity territories are hypotheses—not statements of Atlys’s roadmap.</p><p><b>Inputs</b><br>Atlys introduction material and product screens shared for this exercise. Prioritization requires internal funnel, cohort, channel, user-research and unit-economics data.</p></div></footer>
+  <footer><div class="footer-in"><p><b>About</b><br>An independent product-growth exploration prepared for discussion. Opportunity territories are hypotheses, not statements of Atlys's roadmap.</p><p><b>Inputs</b><br>Atlys introduction material and product screens shared for this exercise. Prioritization requires internal funnel, cohort, channel, user-research and unit-economics data.</p></div></footer>
 
   <script>
     const bar=document.getElementById('progressBar');
